@@ -26,7 +26,11 @@ SECRET_KEY = 'yz)d@x4x4na+v7k0u09&w8fk+o4d+7^=q-ba(rf#7x8e+d*)u('
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
     'dev.ry-team.com',
+    '*',
 ]
 
 
