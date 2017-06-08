@@ -36,3 +36,4 @@ static_all/
 
 node_modules
 /venv
+db.sqlite3
