@@ -47,6 +47,7 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'apps.api',
     'apps.edealer',
@@ -54,6 +55,7 @@ DEFAULT_APPS = [
 
 # Middlewares
 MIDDLEWARE_CLASSES = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -119,6 +121,12 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '[::1]',
+    'dev.ry-team.com',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'localhost',
+    '127.0.0.1',
     'dev.ry-team.com',
 ]
 
